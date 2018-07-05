@@ -8,7 +8,7 @@
   <body id="page-top">
 
     <%if @logged_in%>
-      <h1><%=Welcome @current_user.username%></h1>
+      <h1>Welcome <%=@current_user.username%></h1>
       <h3>"Your Balance: "<%=@current_user.balance%></h1>
     <%else%>
         <a href="/">Home Page</a>
