@@ -33,7 +33,7 @@ class ApplicationController < Sinatra::Base
         if @current_user && @logged_in
             erb :account
         else
-          redirect to '/error'
+          erb :error
         end
     else
       redirect to '/error'
