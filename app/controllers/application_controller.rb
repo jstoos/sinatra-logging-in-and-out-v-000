@@ -36,7 +36,7 @@ class ApplicationController < Sinatra::Base
           erb :error
         end
     else
-      redirect to '/error'
+      erb :error
     end
   end
 
